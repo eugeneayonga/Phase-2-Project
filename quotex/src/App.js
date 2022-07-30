@@ -6,6 +6,19 @@ import QuoteContainer from "./QuoteContainer";
 const quotesAPI = "http://localhost:3000/quotes";
 
 function App() {
+  const [quotes, setQuotes] = useState([]);
+  const [formVisible, setFormVisible] = useState(true);
+  const [favouriteVisible, setFavouriteVisible] = useState(true);
+  const quotesToDisplay = quotes.filter((quote) => favouriteVisible || poem.isFavourite);
+
+
+  useEffect(() => {
+    fetch(quotesAPI)
+      .then(response => response.json())
+      .then(quotes => setQuotes(quotes));
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
