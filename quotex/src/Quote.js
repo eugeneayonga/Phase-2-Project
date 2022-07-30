@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const quotesAPI = "http://localhost:3000/quotes";
 
-function Quote({quote, removeQuote, addToFavorites}) {
+function Quote({quote, removeQuote, addToFavourites}) {
     const {title, content, quotee} = quote;
     const [isRead, setIsRead] = useState(false);
 
@@ -16,8 +16,15 @@ function Quote({quote, removeQuote, addToFavorites}) {
 
 
   return (
-    <div>Quote</div>
-  )
+    <div>
+        <h3>{title}</h3>
+        <p>{content}</p>
+        <p><strong>- By {quotee}</strong></p>
+        <button onClick={() => setIsRead(!isRead)}>Mark as {isRead ? "Hide" : "Show"}</button>
+        <button onClick={onDeleteClick} >Delete</button>
+        <button onClick={() => addToFavourites(quote)} >{quote.isFavourite ? "Unfavourite" : "♥ Favourite" }</button>
+    </div>
+  );
 }
 
-export default Quote
+export default Quote;
