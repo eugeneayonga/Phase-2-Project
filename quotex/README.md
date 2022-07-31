@@ -50,7 +50,7 @@ Welcome to QuoteX. A web app where a user can:
 Use Live share extension to run the HTML File.
 *****
 ## Live Link
-Or you can access the web application directly via this [LINK.]([link.com/](https://eugeneayonga.github.io/Phase-1-Project/))
+Or you can access the web application directly via this https://quotex-api.herokuapp.com/
 *****
 
 ## Technologies Used
