@@ -21,7 +21,13 @@ function App() {
       .then(quotes => setQuotes(quotes));
   }, []);
 
-  
+  // Setting title of the page
+  useEffect(() => {
+    document.title = "QuoteX HomePage";
+    
+  }, []);
+
+
   function addQuote(newQuote) {
     setQuotes([...quotes, newQuote]);
   }

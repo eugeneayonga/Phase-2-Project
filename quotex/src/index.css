@@ -28,7 +28,7 @@ code {
   display: flex;
   border-right: solid black 1px;
   border: solid orangered 40px;
-  background: aquamarine;
+  background: rgb(45, 158, 158);
   padding: 1.1em;
   position: relative;
 }
@@ -45,9 +45,9 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aquamarine;
+  background-color: rgb(45, 158, 158);
   border-radius: 0px;
-  border: solid orangered 35px;
+  border: solid black 35px;
   justify-content: center;
   max-width: right, 30em;
   margin: auto;
@@ -67,6 +67,8 @@ code {
 
 form.new-quote-form {
   border: solid black 1.2px;
+  border-radius: 20px;
+  margin-right: 0.8em;
   padding: 1.2em;
   display: flex;
   flex-direction: column;
@@ -77,6 +79,7 @@ form.new-quote-form > textarea {
   font-size : 1.2em;
   font-family : 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   margin-bottom: 0.5em;
+  border-radius: 11px;
 }
 
 input[type='submit'],
