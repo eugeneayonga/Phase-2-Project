@@ -1,6 +1,7 @@
 import React from "react";
 import Quote from "./Quote";
 
+
 function QuoteContainer({quotes, removeQuote, addToFavourites}) {
     return (
         <div className="quotes-container">

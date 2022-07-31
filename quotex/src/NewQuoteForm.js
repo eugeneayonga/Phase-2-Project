@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 const quotesAPI = "http://localhost:3000/quotes";
 
+
 function NewQuoteForm({addQuote}) {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");

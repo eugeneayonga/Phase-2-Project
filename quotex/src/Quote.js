@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const quotesAPI = "http://localhost:3000/quotes";
 
+
 function Quote({quote, removeQuote, addToFavourites}) {
     const {title, content, quotee} = quote;
     const [isRead, setIsRead] = useState(false);
@@ -26,5 +27,6 @@ function Quote({quote, removeQuote, addToFavourites}) {
     </div>
   );
 }
+
 
 export default Quote;
