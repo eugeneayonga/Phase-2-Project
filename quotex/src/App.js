@@ -1,16 +1,17 @@
 import React, {useState, useEffect} from "react";
-// import logo from './logo.svg';
 import './App.css';
 import NewQuoteForm from "./NewQuoteForm";
 import QuoteContainer from "./QuoteContainer";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 const quotesAPI = "http://localhost:3000/quotes";
+
 
 function App() {
   const [quotes, setQuotes] = useState([]);
   const [formVisible, setFormVisible] = useState(true);
   const [favouriteVisible, setFavouriteVisible] = useState(true);
-  const [text, setText] = useState("");
   const quotesToDisplay = quotes.filter((quote) => favouriteVisible || quote.isFavourite);
 
 
@@ -20,6 +21,7 @@ function App() {
       .then(quotes => setQuotes(quotes));
   }, []);
 
+  
   function addQuote(newQuote) {
     setQuotes([...quotes, newQuote]);
   }
@@ -51,14 +53,16 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className="sidepane">
-        <button onClick={() => setFormVisible(!formVisible)} >Show / Hide New Quote Form</button>
-        {formVisible ? <NewQuoteForm addQuote={addQuote} /> : null}
-        <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show / Hide Favourite Quotes</button>
+    <Router>
+      <div className="App">
+          <div className="sidepane">
+            <button onClick={() => setFormVisible(!formVisible)} >Show / Hide New Quote Form</button>
+            {formVisible ? <NewQuoteForm addQuote={addQuote} /> : null}
+            <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show / Hide Favourite Quotes</button>
+          </div>
+        {renderQuoteView()}
       </div>
-      {renderQuoteView()}
-    </div>
+    </Router>
   );
 }
 
