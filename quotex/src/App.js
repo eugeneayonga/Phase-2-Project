@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import NewQuoteForm from "./NewQuoteForm";
 import QuoteContainer from "./QuoteContainer";
 
 const quotesAPI = "http://localhost:3000/quotes";
@@ -52,16 +53,16 @@ function App() {
     <div className="App">
       <div className="sidepane">
         <button onClick={() => setFormVisible(!formVisible)} >Show/Hide new quote form</button>
-        {formVisible ? <h1> addQuote={addQuote} </h1> : null}
+        {formVisible ? <NewQuoteForm addQuote={addQuote} /> : null}
         <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show/Hide Favourite Quotes</button>
       </div>
       {renderQuoteView()}
 
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Edit <code>src/App.js</code> and save to reload.</p>
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
-      </header>
+      </header> */}
     </div>
   );
 }

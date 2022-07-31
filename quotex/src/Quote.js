@@ -19,7 +19,7 @@ function Quote({quote, removeQuote, addToFavourites}) {
     <div>
         <h3>{title}</h3>
         <p>{content}</p>
-        <p><strong>- By {quotee}</strong></p>
+        <p><strong>{quotee}</strong></p>
         <button onClick={() => setIsRead(!isRead)}>Mark as {isRead ? "Hide" : "Show"}</button>
         <button onClick={onDeleteClick} >Delete</button>
         <button onClick={() => addToFavourites(quote)} >{quote.isFavourite ? "Unfavourite" : "♥ Favourite" }</button>
