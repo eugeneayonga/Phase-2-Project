@@ -13,7 +13,19 @@ Welcome to QuoteX. A web app where a user can:
 6. View their favourite quotes.
 
 ## SCREENSHOT(S)
-![cowsAndBids_Phase-1 Project](https://user-images.githubusercontent.com/64194654/175784495-6b584215-927b-4dda-973e-e58e08aa0223.png)
+![QX1](https://user-images.githubusercontent.com/64194654/182030881-aafc80b4-bc6a-4f54-b4cb-feb8039d893e.png)
+
+![QX2](https://user-images.githubusercontent.com/64194654/182031023-46d96d9f-b1ad-4117-b630-b4e31a76228c.png)
+
+![QX3](https://user-images.githubusercontent.com/64194654/182031041-4ab87245-a995-4d10-afe8-e6f1212335e9.png)
+
+![QX4](https://user-images.githubusercontent.com/64194654/182031105-fc4f9506-5579-49d6-a436-5d889c51f483.png)
+
+![QX5](https://user-images.githubusercontent.com/64194654/182031125-37df876f-7e66-4a53-9b9c-abbe4a4fef0e.png)
+
+![QX6](https://user-images.githubusercontent.com/64194654/182031144-af584300-6bf4-4df5-a12f-4c2803e7c4e4.png)
+
+![QX7](https://user-images.githubusercontent.com/64194654/182031163-9e1bf5fe-e1a8-497a-bd5e-f3ba6d09091f.png)
 
 
 ********
