@@ -1,3 +1,64 @@
+# QuoteX
+
+### Author : Eugene Ayonga 31st July 2022
+****
+## Project Description
+Welcome to QuoteX. A web app where a user can:
+
+1. See all currently created quotes upon app start.
+2. Show / hide the form to create new quotes.
+3. Create quotes and they are still there when they refresh the page.
+4. Mark quotes as read which will change the text of that button to "Mark as Unread".
+5. Favourite their favourite quotes.
+6. View their favourite quotes.
+
+## SCREENSHOT(S)
+![cowsAndBids_Phase-1 Project](https://user-images.githubusercontent.com/64194654/175784495-6b584215-927b-4dda-973e-e58e08aa0223.png)
+
+
+********
+## SetUp Instruction
+### Requirements
+* [HTML](lang Url)
+* Text editor eg [Visual Studio Code](https://code.visualstudio.com/download)
+
+
+### Getting Files
+* Fork the repo
+- Create a new branch in your terminal (git checkout -b improve-feature)
+- Install the prerequisites
+- Make appropriate changes in file(s)
+- Run the server to see the changes
+- Add the changes and commit them (git commit -am "Improve App")
+- Push to the branch (git push origin improve-app)
+- Create a Pull request
+* Open the folder location on terminal and use the following command to run app:
+
+## How To Run It
+Use Live share extension to run the HTML File.
+*****
+## Live Link
+Or you can access the web application directly via this [LINK.]([link.com/](https://eugeneayonga.github.io/Phase-1-Project/))
+*****
+
+## Technologies Used
+1. React JS
+2. CSS
+3. HTML
+4. JSON
+
+
+*****
+## Contact Information
+* Email : eugeneayonga@gmail.com
+*****
+## [License](LICENSE)
+[MIT License]
+Copyright (c) 2022 Eugene Ayonga
+
+
+
+*********************************************************************************************************************************************
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
