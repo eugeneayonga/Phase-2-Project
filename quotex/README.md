@@ -58,6 +58,7 @@ Or you can access the web application directly via this https://quotex-api.herok
 2. CSS
 3. HTML
 4. JSON
+5. Heroku
 
 
 *****
