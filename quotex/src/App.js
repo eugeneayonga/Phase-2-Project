@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './App.css';
 import NewQuoteForm from "./NewQuoteForm";
 import QuoteContainer from "./QuoteContainer";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 const quotesAPI = "http://localhost:3000/quotes";
