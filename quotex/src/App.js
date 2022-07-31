@@ -52,9 +52,7 @@ function App() {
     <div className="App">
       <div className="sidepane">
         <button onClick={() => setFormVisible(!formVisible)} >Show/Hide new quote form</button>
-
-        {formVisible ? <NewQuoteForm addQuote={addQuote} /> : null}
-        
+        {formVisible ? <h1> addQuote={addQuote} </h1> : null}
         <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show/Hide Favourite Quotes</button>
       </div>
       {renderQuoteView()}
