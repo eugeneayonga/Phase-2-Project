@@ -23,7 +23,8 @@ code {
 .sidepane {
   min-height: 10vh;
   min-width: 10em;
-  width: 93.95%;
+  font-size: 27px;
+  width: 92.70%;
   display: flex;
   border-right: solid black 1px;
   border: solid orangered 40px;

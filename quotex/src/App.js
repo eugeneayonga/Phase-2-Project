@@ -10,6 +10,7 @@ function App() {
   const [quotes, setQuotes] = useState([]);
   const [formVisible, setFormVisible] = useState(true);
   const [favouriteVisible, setFavouriteVisible] = useState(true);
+  const [text, setText] = useState("");
   const quotesToDisplay = quotes.filter((quote) => favouriteVisible || quote.isFavourite);
 
 
@@ -52,17 +53,11 @@ function App() {
   return (
     <div className="App">
       <div className="sidepane">
-        <button onClick={() => setFormVisible(!formVisible)} >Show/Hide new quote form</button>
+        <button onClick={() => setFormVisible(!formVisible)} >Show / Hide New Quote Form</button>
         {formVisible ? <NewQuoteForm addQuote={addQuote} /> : null}
-        <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show/Hide Favourite Quotes</button>
+        <button onClick={() => setFavouriteVisible(!favouriteVisible)}>Show / Hide Favourite Quotes</button>
       </div>
       {renderQuoteView()}
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Edit <code>src/App.js</code> and save to reload.</p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
-      </header> */}
     </div>
   );
 }

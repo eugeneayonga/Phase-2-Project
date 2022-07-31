@@ -22,7 +22,7 @@ function Quote({quote, removeQuote, addToFavourites}) {
         <p><strong><em>{quotee}</em></strong></p>
         <button onClick={() => setIsRead(!isRead)}>Mark as {isRead ? "Hide" : "Show"}</button>
         <button onClick={onDeleteClick} >Delete</button>
-        <button onClick={() => addToFavourites(quote)} >{quote.isFavourite ? "Unfavourite" : "♥ Favourite" }</button>
+        <button onClick={() => addToFavourites(quote)} >{quote.isFavourite ? "Unfavourite" : "❤️ Favourite" }</button>
     </div>
   );
 }
